@@ -1,3 +1,5 @@
+import Carousel from "./Carousel";
+
 function PartnersSection() {
   const partners = [
     { name: "Empresa 1", logo: "https://www.reallacto.com.br/site/assets/img/logo_header-dark.svg" },
@@ -5,15 +7,26 @@ function PartnersSection() {
     { name: "Empresa 3", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHCufUU0l16dG6tixPR96dnbCnJPlJFbzvWvg7Nn0YBIv2PDsRhvzzmGK_KfstBpZrfrs&usqp=CAU" },
   ];
 
+  const banners = [
+    { image: "https://i.imgur.com/6ZvHb6m.png" },
+    { image: "https://i.imgur.com/f9ajHhB.png" },
+    { image: "https://i.imgur.com/GjqfWU5.png" },
+    { image: "https://i.imgur.com/bT9nwZ9.png" },
+  ];
+
   return (
     <section className="partners-section">
-      <h2>Portifólio</h2>
-      <p>Algumas empresas que escolheram a <strong>NV TECH</strong></p>
+      <div className="title">
+      <h1>Portifólio</h1>
+      <hr style={{width: '150px', borderColor: '#55021b'}} />
+      </div>
+      <p>Algumas empresas que escolheram a <strong>NV TECH 🚀</strong></p>
       <div className="partners-logos">
         {partners.map((partner, idx) => (
           <img key={idx} src={partner.logo} alt={partner.name} title={partner.name} />
         ))}
       </div>
+      <Carousel banners={banners} />
     </section>
   );
 }

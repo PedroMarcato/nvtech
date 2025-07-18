@@ -3,15 +3,14 @@ function Footer() {
         <footer className="footer">
             <div className="elements">
                 <div>
-                    <h3>Contato</h3>
-                    <h4 style={{ marginBottom: 2 }}>Fone:</h4>
-                    <p style={{ margin: 0 }}>(44) xxxxx-xxxx</p>
-                    <p style={{ margin: 0 }}>(44) xxxxx-xxxx</p>
-                    <h4 style={{ marginBottom: 2 }}>Email:</h4>
-                    <p style={{ margin: 0 }}>email@gmail.com</p>
+                    <a href="#hero"><img style={{width: '120px', height: 'auto'}} src="https://i.imgur.com/I8LKNJe.png" alt="NV TECH" /></a>
+                    <h4 style={{ marginBottom: 2, marginTop: 2}}>Telefone:</h4>
+                    <p style={{ margin: 0 }}>(44) 9 9749-2070</p>
+                    <p style={{ margin: 0 }}>(44) 9 9837-8922</p>
+                    <h4 style={{ marginBottom: 2 }}>E-mail para contato:</h4>
+                    <p style={{ margin: 0 }}>contato@nvtech.info</p>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <h3>Social</h3>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                     <a href="https://www.instagram.com/nvtech.info?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                         <i class="fa-brands fa-instagram footer-icon"></i>
                     </a>
