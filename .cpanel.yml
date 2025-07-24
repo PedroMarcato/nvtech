@@ -1,3 +1,3 @@
 deployment:
   tasks:
-    - /bin/cp -r build/* /home2/nvtech38/public_html/
+    - /bin/cp -r dist/* /home2/nvtech38/public_html/
