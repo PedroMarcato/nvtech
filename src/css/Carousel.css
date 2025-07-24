@@ -1,3 +1,4 @@
+/* Carrossel visível apenas em desktop */
 .carousel-container {
     width: 100%;
     max-width: 100%; /* ajuste conforme necessário */
@@ -5,15 +6,19 @@
     overflow: hidden;
     position: relative;
     cursor: grab;
+    display: block; /* Visível por padrão em desktop */
 }
+
 .carousel-container.grabbing {
     cursor: grabbing;
 }
+
 .carousel-slide {
     display: flex;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
 }
+
 .carousel-banner {
     flex: 0 0 100%;
     width: 100%;
@@ -21,18 +26,23 @@
     max-height: 600px;
     object-fit: cover;
     display: block;
+    -webkit-user-select: none; /* Safari, iOS */
     user-select: none;
     pointer-events: none; /* impede seleção acidental durante o arrasto */
     border-radius: 5px;
 }
+
 .carousel-inner {
     margin-top: 15px;
 }
+
 .carousel-outer {
     text-align: center;
     margin: 35px 0;
     margin-bottom: 0;
+    display: block; /* Visível por padrão em desktop */
 }
+
 .carousel-outer button {
     background-color: transparent;
     border: none;
@@ -44,22 +54,38 @@
     border-radius: 5px;
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* animação suave */
 }
+
 .carousel-outer button:hover {
     transform: scale(1.03); /* infla o botão */
 }
+
 .carousel-outer button i {
     margin-right: 5px;
     transform: rotate(0deg);
 }
+
 .carousel-outer button i.rotate {
-    transform:  rotate(180deg);
+    transform: rotate(180deg);
 }
 
+/* Oculta o carrossel completamente em dispositivos móveis e tablets */
 @media (max-width: 768px) {
-    .carousel-banner {
-        height: 200px;
+    .carousel-container {
+        display: none !important; /* Oculta em mobile */
     }
+    
     .carousel-outer {
-        display: none;
+        display: none !important; /* Oculta em mobile */
+    }
+}
+
+/* Para tablets em modo paisagem também ocultar se necessário */
+@media (max-width: 1024px) and (orientation: portrait) {
+    .carousel-container {
+        display: none !important;
+    }
+    
+    .carousel-outer {
+        display: none !important;
     }
 }

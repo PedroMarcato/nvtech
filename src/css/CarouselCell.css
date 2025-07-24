@@ -1,0 +1,129 @@
+/* Carrossel mobile com classes renomeadas para evitar conflitos */
+.mobile-carousel-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 0;
+    /* Oculta em desktop por padrão */
+    display: none;
+}
+
+.mobile-carousel-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    /* Oculta o carrossel em desktop por padrão */
+    display: none;
+}
+
+.mobile-carousel-container.mobile-carousel-grabbing {
+    cursor: grabbing;
+}
+
+.mobile-carousel-slide {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.mobile-carousel-banner {
+    flex: 0 0 100%;
+    width: 100%;
+    /* Formato 9:16 - altura será 16/9 da largura */
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    display: block;
+    -webkit-user-select: none; /* Safari, iOS */
+    user-select: none;
+    pointer-events: none; /* impede seleção acidental durante o arrasto */
+    border-radius: 8px;
+}
+
+.mobile-carousel-inner {
+    margin-top: 0; /* Removido margin-top já que não há mais botão */
+    /*padding: 0 10px;  Adiciona padding lateral para mobile */
+}
+
+/* Indicadores de slide para mobile */
+.mobile-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.mobile-carousel-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.mobile-carousel-indicator.mobile-carousel-indicator-active {
+    background-color: #55031d;
+    transform: scale(1.2);
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .mobile-carousel-wrapper {
+        display: block; /* Mostra o wrapper apenas em mobile */
+    }
+    
+    .mobile-carousel-container {
+        display: block; /* Mostra o carrossel apenas em mobile */
+    }
+    
+    .mobile-carousel-banner {
+        border-radius: 12px;
+        /* Garante que o formato 9:16 seja mantido */
+        min-height: 400px; /* Altura mínima para telas pequenas */
+    }
+    
+    .mobile-carousel-inner {
+        /*padding: 0 15px;*/
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-carousel-banner {
+        min-height: 350px;
+        border-radius: 10px;
+    }
+    
+    .mobile-carousel-inner {
+        /*padding: 0 10px;*/
+    }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 360px) {
+    .mobile-carousel-banner {
+        min-height: 300px;
+    }
+    
+    .mobile-carousel-indicators {
+        gap: 6px;
+    }
+    
+    .mobile-carousel-indicator {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+/* Oculta completamente em desktop e tablet */
+@media (min-width: 769px) {
+    .mobile-carousel-wrapper {
+        display: none !important;
+    }
+    
+    .mobile-carousel-container {
+        display: none !important;
+    }
+}

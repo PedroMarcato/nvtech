@@ -2,13 +2,12 @@ import { useState, useRef, useEffect } from "react";
 import "../css/Carousel.css";
 
 const Carousel = ({ banners }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [current, setCurrent] = useState(0);
   const [isGrabbing, setIsGrabbing] = useState(false);
   const [dragOffset, setDragOffset] = useState(0);
   const startX = useRef(null);
 
-  if (!banners || banners.length === 0) return null;
 
   // Início do arrasto
   const handleTouchStart = (e) => {
@@ -58,6 +57,8 @@ const Carousel = ({ banners }) => {
     transition: isGrabbing ? "none" : "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
     willChange: "transform",
   };
+
+   if (!banners || banners.length === 0) return null;
 
   return (
     <div className="carousel-outer">

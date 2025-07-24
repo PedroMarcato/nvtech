@@ -24,7 +24,7 @@ body {
 /* Navbar */
 .navbar {
   /*background: #400109;*/
-  background: linear-gradient(90deg, #400109 60%, #700000 100%);
+  background: linear-gradient(90deg, #400109 30%, #400109 100%);
   color: #fff;
   padding: 1rem 4%;
   padding-right: 0;
@@ -392,7 +392,8 @@ hr {
 
 /* Footer */
 .footer {
-  background: #40011e;
+  /*background: #40011e;*/
+  background: linear-gradient(0deg, #240011 20%, #41001e 100%);
   color: #fff;
   padding: 1rem 0 0;
   margin-top: auto;
@@ -464,6 +465,35 @@ hr {
     display: none;
 }
 
+/* Estilos para mensagens de feedback */
+.message {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #b99b572a;
+  color: #b99b57;
+  border: 1px solid #b99b57;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.contact-section button:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+
+.contact-section button:disabled:hover {
+  background: #888;
+}
 
 /* Responsivo */
 @media (max-width: 700px) {
@@ -491,7 +521,7 @@ hr {
   .contact-section .contact-header {
     width: 360px;
     margin-bottom: 3vw;
-    padding: 1px 20px;
+    padding: 1px 15px;
     border: solid #54021d;
     border-bottom: none;
     border-radius: 15px;
@@ -547,14 +577,26 @@ hr {
 }
 
 @media (max-width: 900px) {
+  .footer {
+    background: linear-gradient(120deg, #40011e 55%, #240011 100%);
+  }
     .footer .elements {
         padding: 20px 30px;
     }
     .contact-section form {
-        padding: 20px 30px;
+        padding: 20px 20px;
     }
     .footer-section {
         padding: 0 5rem;
+    }
+    .footer-icon {
+      color: #fff;
+    }
+    .footer-icon:hover {
+      color: #c3a26f;
+    }
+    .navbar { 
+      background: linear-gradient(90deg, #400109 20%, #700000 100%);
     }
 }
 
@@ -582,6 +624,6 @@ hr {
       max-width: 350px;
     }
     .contact-section form {
-      padding-top: 2rem;
+      padding-top: 20px;
     }
 }

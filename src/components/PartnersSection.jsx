@@ -1,4 +1,5 @@
 import Carousel from "./Carousel";
+import CarouselCell from "./CarouselCell";
 
 function PartnersSection() {
   const partners = [
@@ -27,6 +28,7 @@ function PartnersSection() {
         ))}
       </div>
       <Carousel banners={banners} />
+      <CarouselCell />
     </section>
   );
 }
