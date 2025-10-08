@@ -11,6 +11,20 @@ function Footer() {
                     <p style={{ margin: 0 }}>contato@nvtech.info</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+                    <a className="link" href="#hero">
+                        inicio
+                    </a>
+                    <a className="link" href="#about">
+                        sobre
+                    </a>
+                    <a className="link" href="#services">
+                        serviços
+                    </a>
+                    <a className="link" href="#contact">
+                        contato
+                    </a>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                     <a href="https://www.instagram.com/nvtech.info?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                         <i class="fa-brands fa-instagram footer-icon"></i>
                     </a>
@@ -20,9 +34,9 @@ function Footer() {
                     <a href="https://www.facebook.com/">
                         <i class="fa-brands fa-facebook footer-icon"></i>
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    {/*<a href="https://www.linkedin.com/">
                         <i class="fa-brands fa-linkedin footer-icon"></i>
-                    </a>
+                    </a>*/}
                 </div>
             </div>
         </footer>

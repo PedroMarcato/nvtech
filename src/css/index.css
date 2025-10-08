@@ -87,8 +87,8 @@ body {
   padding: 2rem;
   color: #fff;
   max-width: 600px;
-  backdrop-filter: blur(12px); /* efeito de blur */
   -webkit-backdrop-filter: blur(12px); /* suporte para Safari */
+  backdrop-filter: blur(12px); /* efeito de blur */
   box-shadow: 0 4px 32px rgba(0,0,0,0.2);
 }
 
@@ -100,8 +100,8 @@ body {
   width: 15%;
   height: 477px;
   z-index: 0;
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 .blur-left {
@@ -399,6 +399,11 @@ hr {
   margin-top: auto;
   font-size: 1rem;
 }
+.footer .link {
+  display: none;
+  color: #fff;
+  transition: color 0.2s, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer .elements {
   display: flex;
   justify-content: space-between;
@@ -594,6 +599,11 @@ hr {
     }
     .footer-icon:hover {
       color: #c3a26f;
+    }
+    .footer .link {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
     .navbar { 
       background: linear-gradient(90deg, #400109 20%, #700000 100%);

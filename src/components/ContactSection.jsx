@@ -78,8 +78,8 @@ function ContactSection() {
       );
 
       if (result.status === 200) {
-        setMessage('Orçamento enviado com sucesso! Entraremos em contato em breve.');
-        setTimeout(() => setMessage(''), 6000);
+        setMessage('Solicitação enviada com sucesso! Entraremos em contato em breve.');
+        setTimeout(() => setMessage(''), 7000);
         setFormData({
           nome: '',
           email: '',
@@ -164,7 +164,7 @@ function ContactSection() {
             onChange={handleChange}
             required
           />
-          <label htmlFor="complemento">Complemento</label>
+          <label htmlFor="complemento">Complemento*</label>
         </div>
 
         <button type="submit" disabled={isLoading}>
