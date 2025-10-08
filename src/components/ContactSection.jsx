@@ -90,7 +90,7 @@ function ContactSection() {
       }
     } catch (error) {
       console.error('Erro ao enviar email:', error);
-      setMessage('Erro ao enviar orçamento. Tente novamente ou entre em contato por telefone.');
+      setMessage('Erro ao enviar a solicitação de orçamento. Tente novamente ou entre em contato por telefone.');
       setTimeout(() => setMessage(''), 5000);
     } finally {
       setIsLoading(false);
@@ -106,7 +106,7 @@ function ContactSection() {
         <p style={{ marginTop: 20, marginBottom: 10 }}>Para mais informações entre em contato:</p>
         <p style={{ display: 'flex', margin: 2 }}>
           <i style={{ color: "#54021d", fontSize: 25, marginRight: '5px' }} className="fa-solid fa-square-phone"></i>
-          (44) 9 9841-3665
+          +55 44 99716‑6152
         </p>
         <p style={{ display: 'flex', margin: 2 }}>
           <i style={{ color: "#54021d", fontSize: 25, marginRight: '5px' }} className="fa-solid fa-square-envelope"></i>
