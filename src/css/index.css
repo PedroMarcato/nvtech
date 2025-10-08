@@ -580,7 +580,7 @@ hr {
   /*background: #40011e;*/
   background: linear-gradient(0deg, #240011 20%, #41001e 100%);
   color: #fff;
-  padding: 1rem 0 0;
+  padding: 1rem 0 1rem;
   margin-top: auto;
   font-size: 1rem;
 }
