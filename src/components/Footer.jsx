@@ -60,7 +60,7 @@ function Footer() {
                             <i className="fab fa-instagram"></i>
                             <span>Instagram</span>
                         </a>
-                        <a href="https://api.whatsapp.com/send/?phone=5544998413665&text&type=phone_number&app_absent=0" 
+                        <a href="https://wa.me/5544997166152"
                            target="_blank" rel="noopener noreferrer" className="social-link whatsapp">
                             <i className="fab fa-whatsapp"></i>
                             <span>WhatsApp</span>

@@ -14,7 +14,7 @@ function HeroSection() {
                         <li>Infraestrutura: Redes ópticas robustas e de alta velocidade.</li>
                         <li>Configuração e Gerenciamento: Ajustes personalizados para redes e equipamentos avançados.</li>
                     </ul>
-                    <button onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}>Saiba Mais</button>
+                    <button className="button-special" onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}>Saiba Mais</button>
                 </div>
         </section>
     );

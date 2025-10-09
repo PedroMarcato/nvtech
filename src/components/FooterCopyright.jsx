@@ -1,6 +1,6 @@
 function FooterCopyright() {
     return (
-        <section className="footer-section">
+        <section className="footer-section" style={{borderTop: "1px solid rgb(199 173 101 / 15%)"}}>
             <footer className="footer-copyright">
                 <p>
                     &copy; {new Date().getFullYear()} <strong>NV TECH.</strong> Todos os direitos reservados.

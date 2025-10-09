@@ -117,16 +117,17 @@ body {
 
 /* Efeito especial para o botão de contato */
 .navbar li.display a {
-  background: linear-gradient(135deg, #b99b57, #d7c378);
+  background: linear-gradient(135deg, #b99b57, #d7c378, #b99b57);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
   color: #240011;
   font-weight: 600;
   box-shadow: 0 4px 15px rgba(185, 155, 87, 0.3);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease, background-position 0.4s ease;
 }
 
 .navbar li.display a:hover {
-  background: linear-gradient(135deg, #d7c378, #b99b57);
-  color: #240011;
+  background-position: 100% 50%;
   box-shadow: 0 6px 20px rgba(185, 155, 87, 0.4);
 }
 
@@ -324,7 +325,8 @@ body {
 }
 
 .hero-section button {
-  background: #b99a56;
+  background: linear-gradient(135deg, #b99a56, #d7c378, #b99a56);
+  background-size: 200% 200%;
   color: #ffffff;
   border: none;
   padding: 0.8rem 2rem;
@@ -332,11 +334,14 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.2s;
+  transition: all 0.4s ease, background-position 0.4s ease;
+  background-position: 0% 50%;
+  box-shadow: 0 4px 15px rgba(185, 155, 87, 0.2);
 }
 
 .hero-section button:hover {
-  background: #ad9051;
+  background-position: 100% 50%;
+  box-shadow: 0 6px 20px rgba(185, 155, 87, 0.4);
 }
 
 /* About Section */
@@ -430,7 +435,7 @@ hr {
 }
 
 .services-header div {
-  background: #581423;
+  background: #55021b;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   padding: 1.5rem 2rem;
@@ -559,7 +564,9 @@ hr {
 
 
 .contact-section button {
-  background: #b99a56;
+  background: linear-gradient(135deg, #b99a56, #d7c378, #b99a56);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
   color: #fff;
   width: 40%;
   border: none;
@@ -568,11 +575,13 @@ hr {
   font-size: 1rem;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.2s;
+  box-shadow: 0 4px 15px rgba(185, 155, 87, 0.2);
+  transition: all 0.4s ease, background-position 0.4s ease;
 }
 
 .contact-section button:hover {
-  background: #ad9051;
+  background-position: 100% 50%;
+  box-shadow: 0 6px 20px rgba(185, 155, 87, 0.4);
 }
 
 /* Footer */
