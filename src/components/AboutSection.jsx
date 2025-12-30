@@ -7,8 +7,8 @@ function AboutSection() {
       </div>
       <div className="about-header">
         <div><img src="https://i.imgur.com/FfOmSov.png" alt="Natan" /></div>
+        <div><img src="https://i.imgur.com/MjEOMpW.png" alt="Vitor" /> </div>
         <div><img src="https://i.imgur.com/zMD7a9R.png" alt="NvTech" /></div>
-        <div><img src="https://i.imgur.com/MjEOMpW.png" alt="Vitor" /></div>
       </div>
       
     </section>
