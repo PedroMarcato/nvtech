@@ -4,7 +4,7 @@ import '../css/WhatsAppButton.css';
 const WhatsAppButton = () => {
   // Substitua pelo seu número de WhatsApp no formato internacional (ex: 5511999999999)
   const phoneNumber = '5544997166152';
-  const message = 'Olá! Gostaria de mais informações.';
+  const message = 'Olá, equipe da NV TECH! Estou entrando em contato pelo site e gostaria de saber mais sobre';
   
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`; 
