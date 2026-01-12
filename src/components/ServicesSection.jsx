@@ -1,3 +1,7 @@
+import cameras from '../assets/img/OficialImgs/cameras.svg';
+import redeOpticas from '../assets/img/OficialImgs/redeOpticas.svg';
+import configuracao from '../assets/img/OficialImgs/configuracao.svg';
+
 function ServicesSection() {
     return (
         <section id="services" className="services-section">
@@ -8,7 +12,7 @@ function ServicesSection() {
             <div className="services-header">
                 <div>
                     <h3>Câmeras de segurança</h3>
-                    <img src="src/assets/img/OficialImgs/cameras.svg" alt="img" />
+                    <img src={cameras} alt="img" />
                     <ul>
                         <li>
                             Prestamos serviços de instalação de câmeras de segurança, desde
@@ -22,7 +26,7 @@ function ServicesSection() {
                 </div>
                 <div>
                     <h3>Redes Ópticas</h3>
-                    <img src="src/assets/img/OficialImgs/redeOpticas.svg" alt="img 2" />
+                    <img src={redeOpticas} alt="img 2" />
                     <ul>
                         <li>
                             Desenvolvemos soluções em redes ópticas que proporcionam uma
@@ -35,7 +39,7 @@ function ServicesSection() {
                 </div>
                 <div>
                     <h3>Configuração e Gerenciamento de Redes e Equipamentos</h3>
-                    <img src="src/assets/img/OficialImgs/configuracao.svg" alt=" img 3" />
+                    <img src={configuracao} alt=" img 3" />
                     <ul>
                         <li>
                             Trabalhamos com a configuração e gerenciamento de
