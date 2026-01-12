@@ -1,6 +1,7 @@
 import cameras from '../assets/img/OficialImgs/cameras.svg';
 import redeOpticas from '../assets/img/OficialImgs/redeOpticas.svg';
 import configuracao from '../assets/img/OficialImgs/configuracao.svg';
+import manutencao from '../assets/img/OficialImgs/manutencao.svg';
 
 function ServicesSection() {
     return (
@@ -57,7 +58,7 @@ function ServicesSection() {
                 </div>
                 <div>
                     <h3>Manutenção e Otimização de redes</h3>
-                    <img src="src/assets/img/OficialImgs/manutencao.svg" alt="img 4" />
+                    <img src={manutencao} alt="img 4" />
                     <ul>
                         <li>
                             Realizamos serviços de reparo e melhoria de desempenho para redes de internet,
