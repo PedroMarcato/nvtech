@@ -7,6 +7,7 @@ import ContactSection from './components/ContactSection.jsx';
 import Footer from './components/Footer.jsx';
 import PartnersSection from './components/PartnersSection.jsx';
 import FooterCopyright from './components/FooterCopyright.jsx';
+import WhatsAppButton from './components/WhatsAppButton.jsx';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ContactSection />
       <Footer />
       <FooterCopyright />
+      <WhatsAppButton />
     </div>
   );
 }

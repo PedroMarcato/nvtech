@@ -8,7 +8,7 @@ function ServicesSection() {
             <div className="services-header">
                 <div>
                     <h3>Câmeras de segurança</h3>
-                    <img src="https://i.imgur.com/JD5ykGO.png" alt="img" />
+                    <img src="src/assets/img/OficialImgs/cameras.svg" alt="img" />
                     <ul>
                         <li>
                             Prestamos serviços de instalação de câmeras de segurança, desde
@@ -22,7 +22,7 @@ function ServicesSection() {
                 </div>
                 <div>
                     <h3>Redes Ópticas</h3>
-                    <img src="https://i.imgur.com/7M3NrHS.png" alt="img 2" />
+                    <img src="src/assets/img/OficialImgs/redeOpticas.svg" alt="img 2" />
                     <ul>
                         <li>
                             Desenvolvemos soluções em redes ópticas que proporcionam uma
@@ -35,7 +35,7 @@ function ServicesSection() {
                 </div>
                 <div>
                     <h3>Configuração e Gerenciamento de Redes e Equipamentos</h3>
-                    <img src="https://i.imgur.com/xadP5Fl.png" alt=" img 3" />
+                    <img src="src/assets/img/OficialImgs/configuracao.svg" alt=" img 3" />
                     <ul>
                         <li>
                             Trabalhamos com a configuração e gerenciamento de
@@ -53,7 +53,7 @@ function ServicesSection() {
                 </div>
                 <div>
                     <h3>Manutenção e Otimização de redes</h3>
-                    <img src="https://i.imgur.com/wVExexM.png" alt="img 4" />
+                    <img src="src/assets/img/OficialImgs/manutencao.svg" alt="img 4" />
                     <ul>
                         <li>
                             Realizamos serviços de reparo e melhoria de desempenho para redes de internet,
